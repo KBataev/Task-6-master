@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div>
+    <th:block th:each="msg : ${messages}">
+        <h1 th:text="${msg}"></h1>
+    </th:block>
+</div>
+<a href = "/cars">All cars </a> or write on search string "localhost:8080/cars"
+<br />
+<a href = "/cars?count=2">2 cars </a>  or write on search string "localhost:8080/cars?count=2"
+<br />
+<a href = "/cars?count=3">3 cars  </a> or write on search string "localhost:8080/cars?count=3"
+<br />
+<a href = "/cars?count=4">4 cars </a>  or write on search string "localhost:8080/cars?count=4"
+</body>
+</html>
